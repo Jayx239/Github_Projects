@@ -1,0 +1,24 @@
+package Menus;
+
+import java.awt.Dimension;
+import java.awt.Toolkit;
+
+import javax.swing.JFrame;
+//http://zetcode.com/tutorials/javagamestutorial/movingsprites/
+public class SplashScreen extends JFrame{
+	SplashScreen(){
+		Dimension ScreenSize = Toolkit.getDefaultToolkit().getScreenSize();
+		this.setBounds(ScreenSize.width/2-ScreenSize.width/8,ScreenSize.height/2-ScreenSize.height/8 , ScreenSize.width/4, ScreenSize.height/4);
+		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+		splashPanel = new SplashScreenPanel();
+		this.add(splashPanel);
+		splashPanel.
+		//this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+	}
+	SplashScreenPanel splashPanel;
+	
+	public static void main(String[] args){
+		SplashScreen splashScreen = new SplashScreen();
+		splashScreen.setVisible(true);
+	}
+}

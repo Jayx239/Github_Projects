@@ -1,0 +1,15 @@
+package GameComponents;
+
+import java.awt.Dimension;
+import java.awt.Toolkit;
+
+import javax.swing.JFrame;
+
+public class GameFrame extends JFrame {
+	public GameFrame(){
+		Dimension ScreenSize = Toolkit.getDefaultToolkit().getScreenSize();
+		this.setBounds(0,0, ScreenSize.width, ScreenSize.height);
+		
+	}
+	public static 
+}
